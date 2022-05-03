@@ -1,26 +1,11 @@
-name: Release
+name: Release Actions
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 jobs:
   release:
-    name: Release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 'lts/*'
-      - name: Install dependencies
-        run: npm ci
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run semantic-release
-
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: npm ci && npm run dist && npx semantic-release

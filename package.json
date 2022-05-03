@@ -16,6 +16,9 @@
     "semantic-release": "semantic-release",
     "prepare": "husky install"
   },
+  "release": {
+    "branches": ["main", "next"]
+  },
   "keywords": [
     "actions",
     "node",

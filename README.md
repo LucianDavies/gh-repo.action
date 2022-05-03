@@ -41,7 +41,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v2
       - name: Creating GitHub Organization Repository
-        uses: repo-ctrl/create-repo-action@main 
+        uses: LucianDavies/gh-repo.action@latest
         id: create-repo
         with:
           repo-name: '${{ github.event.inputs.repo-name }}'

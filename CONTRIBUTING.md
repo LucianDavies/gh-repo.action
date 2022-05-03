@@ -1,7 +1,7 @@
 Contributing to create-repo-action
 =========================================
 
-I welcome all contributions to create-repo-action
+I welcome all contributions to gh-repo.action
 
 Issues
 ------

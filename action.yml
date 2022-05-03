@@ -1,4 +1,4 @@
-name: 'create-repo.action'
+name: 'gh-repo.action'
 description: 'This action helps create repos both private or public in the same organisation / user account .'
 author: 'luciandavies <tldkhati@gmail.com>'
 branding:

@@ -1,5 +1,5 @@
 {
-  "name": "github.repo.action",
+  "name": "gh-repo.action",
   "version": "0.0.0",
   "description": "A github action to help create repos in the same organisation or user account.",
   "main": "lib/main.js",
@@ -15,10 +15,6 @@
     "test:watch": "jest --watch --coverage",
     "semantic-release": "semantic-release",
     "prepare": "husky install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luciandavies/github.repo.action.git"
   },
   "keywords": [
     "actions",

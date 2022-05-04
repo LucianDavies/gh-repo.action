@@ -20,7 +20,6 @@ Inspired by [node-module-boilerplate](https://github.com/sindresorhus/node-modul
 - [Prettier](https://prettier.io/)
 
 ## Getting started
-
 ### Set up your repository
 
 **Click the "Use this template" button.**

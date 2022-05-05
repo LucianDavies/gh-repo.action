@@ -1,0 +1,24 @@
+name: 'gh-repo.action'
+description: 'This action helps create repos both private or public in the same organisation / user account .'
+author: 'luciandavies <luciandavies@users.noreply.github.com>'
+branding:
+  icon: 'book'
+  color: 'blue'
+
+inputs:
+  repo-name:  # change this as needed
+    description: 'What is the name of the repository?'
+    required: true
+  org-admin-token:
+    description: 'Organization admin token with admin:org scope'
+    required: true
+  is-private:
+    description: 'Whether the repository is private.'
+    required: false
+    default: true
+outputs:
+  repo-url: # change this as needed
+    description: 'URL of the created repository'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

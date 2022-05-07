@@ -4,7 +4,6 @@ author: 'luciandavies <luciandavies@users.noreply.github.com>'
 branding:
   icon: 'book'
   color: 'blue'
-
 inputs:
   repo-name:  # change this as needed
     description: 'What is the name of the repository?'

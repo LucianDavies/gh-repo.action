@@ -19,7 +19,7 @@
     "semantic-release": "semantic-release",
     "cm": "cz",
     "package": "ncc build --external bin --source-map --license licenses.txt",
-    "all": "npm run clean && npm run build && npm run format && npm run lint && npm run package && npm test"
+    "all": "npm run clean && npm run build && npm run format && npm run lint && npm run package"
   },
   "repository": {
     "type": "git",
